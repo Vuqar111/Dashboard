@@ -6,7 +6,10 @@ img.classList.add("keyimg");
 
 new gridjs.Grid({
   columns: [
-    "Sənəd Nömrəsi",
+    {
+      name: "Sənəd Nömrəsi",
+      width: "100px",
+    },
     "Tarix",
     "Partnyor",
     "Müştəri",
@@ -198,3 +201,6 @@ function datefilter(dateValue) {
     }
   }
 }
+
+
+

@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,6 @@
   --greycolor: #f5f6f8;
   --rightmenucolor: #5a5f6a;
 }
-
 
 /* Globals */
 
@@ -34,17 +34,18 @@ input[type="date"] {
 }
 
 input[type="text"] {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #777D8B;
+  color: #777d8b;
   line-height: 16px;
   font-size: 16px;
 }
 
-select, option {
-  font-family: 'Roboto', sans-serif;
+select,
+option {
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #777D8B;
+  color: #777d8b;
   line-height: 16px;
   font-size: 16px;
 }
@@ -130,7 +131,6 @@ img.profile-logo {
   background-color: var(--lefttitlebg);
   color: white;
 }
-
 
 .leftmenudown:hover .icon svg path {
   fill: var(--whitecolor);
@@ -285,6 +285,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gridjs-th {
+  min-width: 130px !important;
+  max-width: 160px !important;
   width: 100% !important;
   max-width: 150px !important;
   background-color: #f5f6f8 !important;
@@ -303,11 +305,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .gridjs-tr td {
   border-bottom: 1px solid #f7f7f7 !important;
 }
+.gridjs-tr td:last-child {
+  color: #233b82;
+}
 
 .gridjs-td {
   width: 100px !important;
   border: none !important;
-  font-weight: normal !important;
+  font-weight: 400 !important;
   padding: 10px !important;
 }
 
@@ -320,7 +325,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gridjs-tbody {
-  color: #191C1F;
+  color: #191c1f;
 }
 
 .table-body {
@@ -335,7 +340,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gridjs-footer {
- 
   border-bottom-width: 1px;
   box-shadow: none !important;
   border-top: 1px solid none;
@@ -365,9 +369,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   float: right;
 }
 .gridjs-pages button {
+  font-family: "Roboto", sans-serif;
   width: 36px;
   height: 36px;
-  background-color: red;
   color: black;
   border-radius: 10px;
   border: none !important;
