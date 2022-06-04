@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;500;600;700&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,9 @@
   --greycolor: #f5f6f8;
   --rightmenucolor: #5a5f6a;
 }
+
+
+/* Globals */
 
 body {
   font-family: "Lexend", sans-serif;
@@ -28,6 +31,22 @@ a {
 
 input[type="date"] {
   color: #777d8b;
+}
+
+input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #777D8B;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+select, option {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #777D8B;
+  line-height: 16px;
+  font-size: 16px;
 }
 
 h2 {
@@ -112,8 +131,9 @@ img.profile-logo {
   color: white;
 }
 
-.leftmenudown:hover .icon i {
-  color: var(--whitecolor);
+
+.leftmenudown:hover .icon svg path {
+  fill: var(--whitecolor);
 }
 
 .leftsubtitle {
@@ -161,11 +181,6 @@ img.profile-logo {
   flex-direction: column;
 }
 
-
-
-
-
-
 /* FilteSection */
 
 .filtersection {
@@ -197,7 +212,6 @@ select {
 #myInput {
   width: 150px;
   height: 48px;
-  font-size: 16px;
   border: 1px solid #ddd;
   padding-left: 10px;
   border-radius: 5px;
@@ -215,19 +229,19 @@ select {
   border: none;
   outline: none;
   cursor: pointer;
-  appearance:none;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	-ms-appearance:none;
-    background-position: calc(100% - 12px) center !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position: calc(100% - 12px) center !important;
   background: url("./assets/selecticon.svg") no-repeat;
   padding: 8px 32px 8px 16px;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+  display: none;
+  -webkit-appearance: none;
 }
 
 #myDate {
@@ -239,27 +253,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 5px;
   border: none;
   outline: none;
-  appearance:none;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	-ms-appearance:none;
-    background-position: calc(100% - 12px) center !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position: calc(100% - 12px) center !important;
   background: url("./assets/dateicon.svg") no-repeat;
   padding: 8px 32px 8px 16px;
 }
-
 
 /* Table Design */
 
 .gridjs-wrapper {
   background-color: white;
   padding: 10px;
+  box-shadow: none;
+  border: none !important;
 }
-
 
 #table {
   width: 100%;
-  margin-top: 0px;
+  box-shadow: none;
 }
 
 .grid-js {
@@ -291,8 +305,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .gridjs-td {
+  width: 100px !important;
   border: none !important;
   font-weight: normal !important;
+  padding: 10px !important;
 }
 
 .gridjs-tr {
@@ -301,6 +317,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .gridjs-tr td {
   padding: 16px;
+}
+
+.gridjs-tbody {
+  color: #191C1F;
 }
 
 .table-body {
@@ -314,8 +334,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #fafafa;
 }
 
-
-
+.gridjs-footer {
+ 
+  border-bottom-width: 1px;
+  box-shadow: none !important;
+  border-top: 1px solid none;
+  padding: 12px 24px;
+}
 .pagesbutton {
   width: 36px;
   height: 36px;

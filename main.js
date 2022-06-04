@@ -180,10 +180,10 @@ function filterfunction(text) {
 
 function datefilter(dateValue) {
   var table, tr, td, i, txtValue;
-  formatValue = dateValue.split('-').reverse().join('.');
-  console.log(typeof dateValue)
-  console.log(dateValue)
-  console.log(formatValue)
+  formatValue = dateValue.split("-").reverse().join(".");
+  console.log(typeof dateValue);
+  console.log(dateValue);
+  console.log(formatValue);
   table = document.getElementById("table");
   tr = table.getElementsByTagName("tr");
   for (i = 0; i < tr.length; i++) {
@@ -198,4 +198,3 @@ function datefilter(dateValue) {
     }
   }
 }
-datefilter();
