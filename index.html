@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Poppins:wght@200&family=Roboto:wght@100&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ferrrum Dashboard2</title>
+  </head>
+  <body>
+    <section class="homesection">
+      <!-- Left Menu -->
+      <div class="leftmenu">
+        <div >
+          <img src="assets/logo.svg"  class="logo" alt="logo" />
+        </div>
+
+        <div class="subtitles">
+          <div class="leftmenudown">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="leftsubtitle">Lorem Ipsum</div>
+          </div>
+
+          <div class="leftmenudown">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="leftsubtitle">Lorem Ipsum</div>
+          </div>
+
+          <div class="leftmenudown">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="leftsubtitle">Lorem Ipsum</div>
+          </div>
+
+          <div class="leftmenudown">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="leftsubtitle">Lorem Ipsum</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Right Menu -->
+      <section class="rightmenusection">
+
+        <div class="rightmenu">
+          <div class="row">
+            <h2>Sənədlər</h2>
+          </div>
+          <div class="profile row">
+            <div>
+              <h3>Satış kuratoru</h3>
+              <h5>Vəzifə</h5>
+            </div>
+            <div class="profileright row">
+              <img src="assets/satisimgpng.png" class="profile-logo" alt="profile" />
+              <div class="row">
+               <img src="assets/arrowdown2.svg" class="arrowdownimg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="container">
+      <div class="filtersection" align="right">
+      <div class="filter">
+        <select type="search" class=" mySelect"  id="selectid" data-table="table-body" onchange="filterfunction(this.value)">
+          <option value=""> Partnyorlar </option>  
+          <option value="aberdam"> Aberdam </option>  
+          <option value="yurim"> Yurim </option>  
+        <select>
+      </div>
+      <div class="filter">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sənəd nömrəsi">
+      </div>
+      <div class="filter">
+        <input type="date" id="myDate"  class="dateInput"  onchange="datefilter(this.value)" placeholder="Tarix üzrə axtar" onfocus="axtar" >
+      </div>
+      <div>
+      </div>
+      </div> 
+      <div id="table"></div>
+      </div>
+      </section>
+      </section>
+  </body>
+  <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+  <script src="main.js"></script>
+</html>
